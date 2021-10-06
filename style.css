@@ -7,7 +7,7 @@
     padding:0;
     box-sizing: border-box;
     list-style: none;
-    font-family: 'Acme';
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -26,9 +26,9 @@ body
     background-color: black;    
     color: white;
     border: solid red;
-    border-radius: 50%;
+    border-radius: 70%;
     width: 40vh;
-    height: 25vh;
+    height: 28vh;
     position: absolute;
     top: 2%;
     left: 40%;
