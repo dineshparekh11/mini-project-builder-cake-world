@@ -4,61 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>CakeWorld</title>
+    <title>Cakeworld</title>
 </head>
 <body>
-    <header class="header">
+    <section>
+        <div id="logo">
+            <img src="assets/cake.png" alt="cakelogo">
+            <h1>The Cake World</h1>
+        </div>
+        <div id="container">
+            
 
-        <img src="https://image3.mouthshut.com/images/imagesp/925663698s.jpg"/>
-        
-        
-      </header>
-      <section class="Rectangle1">
-        <img src="/assets/candle.png" />
-    
-        <div class="menu">
-          <img src="/img/img/group-16.svg" class="Group-16" />
-          <div class="menu-container">
-            <h3>Ingredients</h3>
-            <p class="items">Chocolate</p>
-            <p class="items">Strawberry</p>
-            <p class="items">Butterscotch</p>
-            <p class="items">Vannila</p>
-            <p class="items">Redvelvet</p>
-          </div>
-        </div>
-        <div class="cake">
-          <img src="/img/img/group-2.svg" alt="" />
-          
-        </div>
-      </section>
-      <footer class="footer">
-        <img src="/assets/list_template.png" />
-        <div class="Rectangle2">
-          <div class="container-text">Choose what goes into your Cake</div>
-          <div class="button-container">
-            <div class="button btn-chocolate active">Chocolate</div>
-            <div class="button btn-strawberry active">Strawberry</div>
-            <div class="button btn-butterscotch active">Butterscotch</div>
-            <div class="button btn-vannila active">Vannila</div>
-            <div class="button btn-redvelvet active">Redvelvet</div>
-          </div>
-        </div>
-        <div class="Rectangle3">
-          <div class="Rectangle4">
-            <p>Current Order Total</p>
-            <p class="price-details">INR 170</p>
-            <p>BUY</p>
-    
-            <div class="Rectangle5">
-              Pay and receive order
+            <div id="pricelist">
+                <div> 
+                    <img src="assets/list_template.png" alt="">
+                </div>
+                
+                <div class="integrientlist">
+                    <h4>PRICES</h4>
+                    <ul>
+                        <li>Chocolate-----300</li>
+                        <li>Strawberry-----100</li>
+                        <li>Butterscotch-----200</li>
+                        <li>Vanilla-------250</li>
+                        <li>Redvelvet---------350</li>
+                    </ul>
+                </div>
             </div>
-          </div>
+
+            <div id="cakedisplay">
+
+                <div id="candle">
+                    <img src="assets/candle.png" alt="candle.png">
+                </div>
+                <div id="firstlayer" class="cakelayer" ></div>
+                <div id="secondlayer" class="cakelayer"></div>
+                <div id="thridlayer" class="cakelayer"></div>
+                <div id="fourthlayer" class="cakelayer"></div>
+                <div id="lastlayer" class="cakelayer"></div>
+            </div>
+
+            <div id="billlist">
+                <div> 
+                    <img src="assets/list_template.png" alt="">
+                </div>
+                
+                <div class="integrientlist">
+                    <h4>Bill</h4>
+                    <ul>
+                        <li class="integrients" > </li>
+                        <li class="integrients"></li>
+                        <li class="integrients" ></li>
+                        <li class="integrients"></li>
+                        <li class="integrients"></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
         </div>
-      </footer>
-      <div class="footers">Made with <img src="/img/img/prograd-heart.svg"> by ProGrad</div>
-      <script src="app.js"></script>
-    
+        <div id="buttonslist">
+
+            <button>Chocolate</button>
+            <button>Strawberry</button>
+            <button>Butterscoth</button>
+            <button>Vanilla</button>
+            <button>Redvelvet</button>
+            <button id="buy">BUY</button>
+
+
+        </div>
+    </section>
 </body>
 <script src="/script.js"></script>
 </html>
+
+//By Dinesh
