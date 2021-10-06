@@ -8,4 +8,51 @@
 }
 
 /* Fill your code*/
+#renderChocolate{
+    width: 245px;
+    visibility: hidden;
+}
 
+#renderStrawberry{
+    width: 200px;
+    left: 40px;
+    visibility: hidden;
+}
+
+#renderButterscotch{
+    width: 160px;
+    left: 60px;
+    visibility: hidden;
+}
+
+#renderVannila{
+    width: 120px;
+    left: 80px;
+    visibility: hidden;
+}
+
+#renderRedvelvet{
+    width: 80px;
+    left: 100px;
+    visibility: hidden;
+}
+
+header
+{
+    size: 50px;
+    color: brown;
+    align-self: start;
+    align-content: center;
+}
+.img{
+    height: 50px;
+    width: 100px;
+}
+button
+{
+color: cornflowerblue;
+}
+.btn
+{
+    columns: purple;
+}
