@@ -1,8 +1,11 @@
+// Write your code on this file. Please don't change the existing code
+
 //write your own code
 window.onload= () => renderall()    
 
 function renderall()
 {
+  
     chocolate()
     vanilla()
     strawberry()
@@ -28,11 +31,12 @@ var layercost=
 }
 
 let buttons=document.querySelectorAll("#buttonslist button")
+let layers= document.querySelectorAll(".cakelayer")
 let integrients = document.querySelectorAll(".integrients")
  let total=0
  let cost = document.querySelector("#cost")
 
- 
+
 buttons[0].addEventListener("click",chocolate)
 function chocolate()
 {
@@ -53,13 +57,10 @@ cost.innerHTML=""
     integrients[0].innerHTML=""
     total-=layercost.chocolate
     cost.innerHTML=""
-
-
-
  }    
 }
 
-//strawberry
+//strawberry prograsion 
 buttons[1].addEventListener("click",strawberry)
 function strawberry()
 {
@@ -72,8 +73,6 @@ document.querySelector("#fourthlayer").classList.add("fourthlayer");
 integrients[1].innerHTML="Strawberry----> 100"
 total+=layercost.strawberry
 cost.innerHTML=""
-
-
  }
  else
  {
@@ -81,13 +80,9 @@ cost.innerHTML=""
     integrients[1].innerHTML=""
     total-=layercost.strawberry
     cost.innerHTML=""
-
  }    
 }
-
-
-
-//butterscoth
+//butterscoth progresion 
 buttons[2].addEventListener("click",butterscotch)
 function butterscotch()
 {
@@ -100,8 +95,6 @@ document.querySelector("#thridlayer").classList.add("thridlayer");
 integrients[2].innerHTML="Butterscotch----> 200"
 total+=layercost.butterscotch
 cost.innerHTML=""
-
-
  }
  else
  {
@@ -109,11 +102,10 @@ cost.innerHTML=""
     integrients[2].innerHTML=""
     total-=layercost.butterscotch
     cost.innerHTML=""
-
  }    
 }
 
-//
+//vanilla progresion
 buttons[3].addEventListener("click",vanilla)
 function vanilla()
 {
@@ -140,7 +132,7 @@ cost.innerHTML=""
 }
 
 
-//redvelvet
+//redvelvet progresion
 buttons[4].addEventListener("click",redvelvet)
 function redvelvet()
 {
@@ -153,8 +145,6 @@ document.querySelector("#firstlayer").classList.add("firstlayer");
 integrients[4].innerHTML="Redvelvet-------> 350"
 total+=layercost.redvelvet
 cost.innerHTML=""
-
-
  }
  else
  {
@@ -162,16 +152,16 @@ cost.innerHTML=""
     integrients[4].innerHTML=""
     total-=layercost.redvelvet
     cost.innerHTML=""
-
  }    
 }
+//buy button progresion
 
-
-//buy button
-
+buttons[0].addEventListener("click",chocolatelayer)
+function chocolatelayer()
 buttons[5].addEventListener("click",buy)
 function buy()
 {
+    layers[0].classList.toggle("#lastlayer")
     cost.innerHTML= "Total cost ------> " +  total
 
 }
