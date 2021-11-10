@@ -1,12 +1,11 @@
-// Write your code on this file. Please don't change the existing code
+/*Fill your code */
 
-//write your own code
+
 window.onload= () => renderall()    
 
 function renderall()
 {
-  
-    chocolate()
+    chocolatelayer()
     vanilla()
     strawberry()
     redvelvet()
@@ -31,14 +30,13 @@ var layercost=
 }
 
 let buttons=document.querySelectorAll("#buttonslist button")
-let layers= document.querySelectorAll(".cakelayer")
 let integrients = document.querySelectorAll(".integrients")
  let total=0
  let cost = document.querySelector("#cost")
 
-
-buttons[0].addEventListener("click",chocolate)
-function chocolate()
+ 
+buttons[0].addEventListener("click",chocolatelayer)
+function chocolatelayer()
 {
 
  layerstate.chocolate=!layerstate.chocolate
@@ -46,7 +44,7 @@ function chocolate()
  { 
 
 document.querySelector("#lastlayer").classList.add("lastlayer");
-integrients[0].innerHTML="Chocolate----> 300"
+integrients[0].innerHTML="Chocolate-----300"
 total+=layercost.chocolate
 cost.innerHTML=""
 
@@ -57,10 +55,13 @@ cost.innerHTML=""
     integrients[0].innerHTML=""
     total-=layercost.chocolate
     cost.innerHTML=""
+
+
+
  }    
 }
 
-//strawberry prograsion 
+//strawberry
 buttons[1].addEventListener("click",strawberry)
 function strawberry()
 {
@@ -70,9 +71,11 @@ function strawberry()
  { 
 
 document.querySelector("#fourthlayer").classList.add("fourthlayer");
-integrients[1].innerHTML="Strawberry----> 100"
+integrients[1].innerHTML="Strawberry-----100"
 total+=layercost.strawberry
 cost.innerHTML=""
+
+
  }
  else
  {
@@ -80,9 +83,13 @@ cost.innerHTML=""
     integrients[1].innerHTML=""
     total-=layercost.strawberry
     cost.innerHTML=""
+
  }    
 }
-//butterscoth progresion 
+
+
+
+//butterscoth
 buttons[2].addEventListener("click",butterscotch)
 function butterscotch()
 {
@@ -92,9 +99,11 @@ function butterscotch()
  { 
 
 document.querySelector("#thridlayer").classList.add("thridlayer");
-integrients[2].innerHTML="Butterscotch----> 200"
+integrients[2].innerHTML="Butterscotch-----200"
 total+=layercost.butterscotch
 cost.innerHTML=""
+
+
  }
  else
  {
@@ -102,10 +111,11 @@ cost.innerHTML=""
     integrients[2].innerHTML=""
     total-=layercost.butterscotch
     cost.innerHTML=""
+
  }    
 }
 
-//vanilla progresion
+//
 buttons[3].addEventListener("click",vanilla)
 function vanilla()
 {
@@ -115,7 +125,7 @@ function vanilla()
  { 
 
 document.querySelector("#secondlayer").classList.add("secondlayer");
-integrients[3].innerHTML="Vanilla------> 250"
+integrients[3].innerHTML="Vanilla-------250"
 total+=layercost.vanilla
 cost.innerHTML=""
 
@@ -132,7 +142,7 @@ cost.innerHTML=""
 }
 
 
-//redvelvet progresion
+//redvelvet
 buttons[4].addEventListener("click",redvelvet)
 function redvelvet()
 {
@@ -142,9 +152,11 @@ function redvelvet()
  { 
 
 document.querySelector("#firstlayer").classList.add("firstlayer");
-integrients[4].innerHTML="Redvelvet-------> 350"
+integrients[4].innerHTML="Redvelvet---------350"
 total+=layercost.redvelvet
 cost.innerHTML=""
+
+
  }
  else
  {
@@ -152,16 +164,20 @@ cost.innerHTML=""
     integrients[4].innerHTML=""
     total-=layercost.redvelvet
     cost.innerHTML=""
+
  }    
 }
-//buy button progresion
 
-buttons[0].addEventListener("click",chocolatelayer)
-function chocolatelayer()
+
+//buy button
+
 buttons[5].addEventListener("click",buy)
 function buy()
 {
-    layers[0].classList.toggle("#lastlayer")
-    cost.innerHTML= "Total cost ------> " +  total
+    cost.innerHTML= "Total cost ------- " +  total
 
 }
+
+
+
+
